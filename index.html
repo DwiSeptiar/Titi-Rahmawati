@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Untuk Titi, Cahaya Hatiku</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 90%;
+            width: 500px;
+            color: #333;
+        }
+
+        h1 {
+            color: #e63946;
+        }
+
+        .romantic-image, .love-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .heart {
+            font-size: 40px;
+            color: red;
+        }
+
+        button {
+            background: #e63946;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #d62839;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -24,6 +86,15 @@
             <p>Sayangku Titi, dalam hidup ini aku hanya ingin satu hal: menghabiskan setiap hariku bersamamu. Aku ingin menjadi alasan senyummu, tempatmu bersandar, dan sosok yang selalu ada untukmu. Kamu adalah anugerah terindah yang Tuhan berikan kepadaku. Aku berjanji akan selalu mencintaimu, dalam suka maupun duka, hingga waktu tak lagi mengenal kita. ❤️</p>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function showMessage() {
+            var message = document.getElementById("secret-message");
+            if (message.classList.contains("hidden")) {
+                message.classList.remove("hidden");
+            } else {
+                message.classList.add("hidden");
+            }
+        }
+    </script>
 </body>
 </html>
